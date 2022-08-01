@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+
+
+<bean id = "HumanHeart" class = "com.autowire.bl.Heart">
+<property name = "nameOfAnimal" value = " Human"> </property>
+<property name = "NoOfHeart" value = " 1"> </property>
+
+</bean>
+
+
+
+<bean id = "octopusHeart" class = "com.autowire.bl.Heart">
+<property name = "nameOfAnimal" value = " octopus"> </property>
+<property name = "NoOfHeart" value = " 4"> </property>
+
+</bean>
+
+<bean id = "human" class = " com.autowire.bl.Human" >
+
+</bean>
+
+</beans>
